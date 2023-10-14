@@ -38,18 +38,18 @@ export default function Nage() {
                     <button className='btns' id='bt1' onClick={() => setInput(input+'1')}>1</button>
                 </div>
                 <div className='num1'>
-                    <button className='btns' id='bt.' onClick={() => setInput(input+'.')}>.</button>
                     <button className='btns' id='bt0' onClick={() => setInput(input+'0')}>0</button>
+                    <button className='btns' id='bt.' onClick={() => setInput(input+'.')}>.</button>
                     <button className='btns' id='bt=' onClick={() => setResult(eval(input))}>=</button>
                 </div>
             </div>
 
             <div className='exp'>
-                <button className='btns' id='btb' onClick={handleclear}>Reset</button>
-                <button className='btns' id='bt+' onClick={() => setInput(input+'+')}>+</button>
+                <button className='btns' id='btb' onClick={handleclear}>Clear</button>
+                <button className='btns' id='btd' onClick={() => setInput(input+'/')}>/</button>
                 <button className='btns' id='bt*' onClick={() => setInput(input+'*')}>*</button>
                 <button className='btns' id='bt-' onClick={() => setInput(input+'-')}>-</button>
-                <button className='btns' id='btd' onClick={() => setInput(input+'/')}>/</button>
+                <button className='btns' id='bt+' onClick={() => setInput(input+'+')}>+</button>
                 
             </div>
 
